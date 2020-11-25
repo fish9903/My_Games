@@ -91,7 +91,7 @@ int main()
 
 int* Create_Number()
 {
-	static int number[4] = { -1, };
+	static int number[4] = { -1, -1, -1, -1};
 	int temp_number;
 	srand((int)time(NULL));
 
@@ -100,17 +100,17 @@ int* Create_Number()
 		int temp;
 		temp = rand() % 10;
 
+		if (i == 0 && temp == 0)
+		{
+			while (temp == 0)
+				temp = rand() % 10;
+		}
+
 		for (int j = 0; j < 4; j++)
 		{
-			if (number[0] == 0)
+			if (number[0] == temp || number[1] == temp || number[2] == temp || number[3] == temp)
 			{
-				while (number[0] == 0)
-					temp = rand() % 10;
-			}
-
-			if (number[j] == temp)
-			{
-				while (number[j] == temp)
+				while (number[0] == temp || number[1] == temp || number[2] == temp || number[3] == temp)
 					temp = rand() % 10;
 			}
 		}
