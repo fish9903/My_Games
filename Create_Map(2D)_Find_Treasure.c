@@ -154,13 +154,13 @@ int* Create_Map(int row, int col)
 
 	for (int i = 0; i < row; i++)
 	{
-		arr[i] = malloc(sizeof(int) * col);
+		arr[i] = calloc(col, sizeof(int));
 	}
 
-	for (int i = 0; i < row; i++)
+	/*for (int i = 0; i < row; i++)
 	{
 		memset(arr[i], 0, sizeof(arr[i]));
-	}
+	}*/
 
 	return arr;
 }
