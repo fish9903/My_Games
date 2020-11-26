@@ -5,7 +5,7 @@
 #include <stdbool.h>
 
 
-// 숫자야구
+// Same as Practice.c
 
 int* Create_Number();
 
