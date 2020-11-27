@@ -12,6 +12,11 @@ int main()
 	// Create map
 	int row, col;
 	scanf("%d %d%*c", &row, &col);
+	/*
+	scanf("%d %d", &row, &col);
+	while(getchar() != '\n')
+	*/
+	   
 
 	int** map = Create_Map(row, col);
 
@@ -63,6 +68,10 @@ int main()
 		int error = 0;
 
 		scanf("%c%*c", &movement);
+		/*
+		scanf("%c", &movement);
+		while(getchar() != '\n')
+		*/
 
 		if (movement == 'w')	// Up
 		{
