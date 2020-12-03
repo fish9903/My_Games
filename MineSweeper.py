@@ -1,4 +1,6 @@
 # minesweeper(print map)
+# '*' = mine
+# '.' = safe area
 
 row, col = map(int, input().split())
 
