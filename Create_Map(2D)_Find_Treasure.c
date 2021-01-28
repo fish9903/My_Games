@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-int* Create_Map(int row, int col);
+int** Create_Map(int row, int col);
 
 int main()
 {
@@ -157,7 +157,7 @@ int main()
 	return 0;
 }
 
-int* Create_Map(int row, int col)
+int** Create_Map(int row, int col)
 {
 	int** arr = malloc(sizeof(int*) * row);
 
